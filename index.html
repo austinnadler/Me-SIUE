@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="assets/styles/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.rawgit.com/AlphaGit/ng-pattern-restrict/master/src/ng-pattern-restrict.min.js"></script>
+        <script src="https://kit.fontawesome.com/09a54ca737.js" crossorigin="anonymous"></script>
+        <script src="app/app.module.js"></script>
+        <script src="app/app.routes.js"></script>
+        <script src="app/components/home/homeController.js"></script>
+        <script src="app/components/projects/projectsController.js"></script>
+    </head>
+    <body>
+        <main>
+            <div ng-app="app" ng-cloak>
+                <!-- Nav header is in the View.html files b/c color changes depending on which page you're on -->
+                <ng-view></ng-view>
+                <footer class="text-center">
+                    <p class="w3-tiny w3-text-grey w3-center w3-margin">&copy; Austin Nadler</p>
+                </footer>      
+            </div>
+        </main>
+    </body>
+</html>

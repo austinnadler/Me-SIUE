@@ -1,0 +1,101 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: #0099ff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-button {
+    background-color: #0099ff;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+}
+
+.nav-button-current {
+    background-color: white;
+    color: #0099ff;
+}
+
+.card {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    width: 99%;
+    max-width: 1300px;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    border-radius: 5px;
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.center {
+    margin: auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.img {
+    max-width: 200px;
+    border-radius: 5px;
+}
+
+.logo {
+    max-width: 200px;
+    margin: 20px;
+}
+
+.white {
+    background-color: white;
+}
+
+.text-blue {
+    color: #0099ff;
+}
+
+.btn {
+    font-size: 12px;
+    color: white;
+    background-color: #0099ff;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: green;
+}
+
+.project-desc {
+    margin: 20px 40px 20px 40px;
+}
+
+@media only screen and (max-width : 1024px) {
+    .card {
+        box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+        border-radius: 10px;
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    .btn {
+        display: inline-block;
+        font-size: 40px;
+        margin: 20px;
+    }
+}

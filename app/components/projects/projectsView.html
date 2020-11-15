@@ -1,0 +1,43 @@
+<header>
+    <nav>
+        <a href="#!/home" class="nav-button fas fa-home"></a>
+        <a href="#!/projects" class="nav-button nav-button-current fas fa-hammer"></a>        
+    </nav>
+</header>
+<div class="card text-center" style="box-shadow: none;">
+    <h1 class="bold">Projects</h1>
+</div>
+<div class="text-center">
+    <a class="btn" style="background-color: green;" id="btnAll" ng-click="showAllProjects()">All</a>
+    <a class="btn" id="btnAmeren" ng-click="showAmerenProjects()">Ameren Projects</a>
+    <a class="btn" id="btnTrue" ng-click="showTrueProjects()">True Mfg. Projects</a>
+    <a class="btn" id="btnInd" ng-click="showIndProjects()">Independent Projects</a>
+</div>
+<br>
+<div class="card" id="divAmeren">
+    <div class="text-center"><img src="assets/img/ameren_logo.png" class="logo"></div>
+    <div ng-repeat="p in amerenProjects" class="project-desc">
+        <h2 class="bold">{{p.name}}</h2>
+        <p>{{p.desc}}</p>
+        <p ng-if="p.desc2">{{p.desc2}}</p>
+    </div>
+</div>
+<div class="card" id="divTrue">
+    <div class="text-center"><img src="assets/img/truemfg_logo.png" class="logo"></div>
+    <div ng-repeat="p in trueProjects" class="project-desc">
+        <h2 class="bold">{{p.name}}</h2>
+        <p>{{p.desc}}</p>
+        <p ng-if="p.desc2">{{p.desc2}}</p>
+    </div>
+</div>
+<div id="divInd">
+    <div class="text-center" style="margin-top: 20px; margin-bottom: 20px;">
+        <p class="center">You can see the source code for my personal projects at my <a href="https://github.com/austinnadler" class="text-blue">GitHub</a>.</p>
+    </div>
+    <div class="card">
+        <div ng-repeat="p in personalProjects" class="project-desc">
+            <h2 class="bold">{{p.name}}</h2>
+            <p>{{p.desc}}</p>
+        </div>
+    </div>
+</div>
