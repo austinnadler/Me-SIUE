@@ -40,6 +40,10 @@ app.controller("projectsController", function($scope, $route, $location, $routeP
             images: ["assets/img/pmm/0.png", "assets/img/pmm/1.png", "assets/img/pmm/2.png", "assets/img/pmm/3.png", "assets/img/pmm/4.png"]
         },
         {
+            name: "My Project Tracker (AngularJS)",
+            desc: "My Project Tracker is a database driven AngularJS Single-Page-Application that I created to keep track of the different projects that I am working on for both work and school."
+        },
+        {
             name: "Customer Management (JavaFX, MySQL)",
             desc: "Customer Management is a simple database (or CSV file) driven JavaFX app that I built in order to learn the basics of JavaFX and JDBC."
         },
@@ -68,6 +72,8 @@ app.controller("projectsController", function($scope, $route, $location, $routeP
             desc: "Battleship is a simple command-line battleship game that uses characters to represent spaces on the board."
         }
     ]
+
+    // AngularJS + jQuery methods
 
     $scope.showAllProjects = function() {
         $("#divAmeren").show();
