@@ -3,7 +3,7 @@ app.controller("projectsController", function($scope, $route, $location, $routeP
         { 
             name: "ServiceNow Self-Service Portal Redesign (AngularJS)", 
             desc: "I am working with the service catalog manager and UX team to update Ameren's ServiceNow Self-Service Portal.",
-            desc2: "My responsibilies on this project include researching the capabilities of the portal and building a concept in ServiceNow using HTML, CSS and AngularJS. I am using those tools to build the front-end of the widgets that will be on the portal to help users find request forms that they need, and manage all Assets & Tasks that they have been assigned or created."
+            desc2: "My responsibilies on this project include researching the capabilities of the portal and building a functional prototype in ServiceNow using HTML, CSS and AngularJS, and deploying updates to the production environment through change management."
         },
         { 
             name: "ServiceNow KPI Dashboards", 
@@ -15,8 +15,9 @@ app.controller("projectsController", function($scope, $route, $location, $routeP
             desc2: "Ameren has a lot of integrations connected to ServiceNow, and sometimes things get messed up and cause duplicate records to be created. We use the ServiceNow GUI as well as an Oracle database instance to analyze this data and determine which records should be deleted. Then, we work with our ServiceNow developer team to look into the integration and determine what is causing the duplicate records to be created, so that it can be corrected."
         },
         {
-            name: "ITSM SharePoint Site",
-            desc: "I worked with the ITSM process managers to create an informational company-facing SharePoint site, and now maintain that site. The managers upload "
+            name: "ITSM SharePoint Site / Digital Asset Management Sub-site",
+            desc: "I worked with the ITSM process managers to create an informational company-facing SharePoint site, and now maintain that site. The managers upload relevant documents to their parts of the page.",
+            desc2: "I also created a subsite for the DAM project, which involves discovery and service mapping."
         }
     ]
 
@@ -36,8 +37,13 @@ app.controller("projectsController", function($scope, $route, $location, $routeP
     $scope.personalProjects = [
         {
             name: "This Website",
-            desc: "I develop and maintain this website myself with HTML, CSS, AngularJS, and jQuery.",
-            images: ["assets/img/pmm/0.png", "assets/img/pmm/1.png", "assets/img/pmm/2.png", "assets/img/pmm/3.png", "assets/img/pmm/4.png"]
+            desc: "I develop and maintain this website myself with HTML, CSS, AngularJS, and jQuery."
+            //,images: ["assets/img/pmm/0.png", "assets/img/pmm/1.png", "assets/img/pmm/2.png", "assets/img/pmm/3.png", "assets/img/pmm/4.png"]
+        },
+        {
+            name: "ServiceNow Scripting in PDI",
+            desc: "Working at Ameren got me interesting in the ServiceNow platform. I have a personal developer instance (PDI) in which I practice with scripting things like Business Rules, UI Policies, UI Actions etc.",
+            desc2: "I use this instance to show possible solutions to problems brought up by my ITSM managers at Ameren. Eventually, I hope to be a full-time ServiceNow developer."
         },
         {
             name: "My Project Tracker (AngularJS)",
@@ -45,7 +51,7 @@ app.controller("projectsController", function($scope, $route, $location, $routeP
         },
         {
             name: "Customer Management (JavaFX, MySQL)",
-            desc: "Customer Management is a simple database (or CSV file) driven JavaFX app that I built in order to learn the basics of JavaFX and JDBC."
+            desc: "Customer Management is a simple database driven JavaFX app that I built in order to learn the basics of JavaFX and JDBC. I also created a CSV version to refresh on file IO in Java."
         },
         {
             name: "Sales Database GUI (C#, Microsoft SQL Server)",

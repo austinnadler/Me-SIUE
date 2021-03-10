@@ -15,9 +15,8 @@ a {
     text-decoration: none;
 }
 
-body {
-    margin: 0;
-    padding: 0;
+h1, h2 {
+    font-weight: bold;
 }
 
 .nav-button {
@@ -52,10 +51,6 @@ body {
     margin: auto;
 }
 
-.bold {
-    font-weight: bold;
-}
-
 .img {
     max-width: 200px;
     border-radius: 5px;
@@ -87,7 +82,6 @@ body {
 
 .btn:hover {
     cursor: pointer;
-    background-color: green;
 }
 
 .project-desc {

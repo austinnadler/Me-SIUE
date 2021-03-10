@@ -38,6 +38,7 @@
         <div ng-repeat="p in personalProjects" class="project-desc">
             <h2 class="bold">{{p.name}}</h2>
             <p>{{p.desc}}</p>
+            <p ng-if="p.desc2">{{p.desc2}}</p>
         </div>
     </div>
 </div>
