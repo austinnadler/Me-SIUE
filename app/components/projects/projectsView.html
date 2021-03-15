@@ -18,16 +18,14 @@
     <div class="text-center"><img src="assets/img/ameren_logo.png" class="logo"></div>
     <div ng-repeat="p in amerenProjects" class="project-desc">
         <h2 class="bold">{{p.name}}</h2>
-        <p>{{p.desc}}</p>
-        <p ng-if="p.desc2">{{p.desc2}}</p>
+        <p ng-repeat="d in p.desc">{{d}}</p>
     </div>
 </div>
 <div class="card" id="divTrue">
     <div class="text-center"><img src="assets/img/truemfg_logo.png" class="logo"></div>
     <div ng-repeat="p in trueProjects" class="project-desc">
         <h2 class="bold">{{p.name}}</h2>
-        <p>{{p.desc}}</p>
-        <p ng-if="p.desc2">{{p.desc2}}</p>
+        <p ng-repeat="d in p.desc">{{d}}</p>
     </div>
 </div>
 <div id="divInd">
@@ -37,8 +35,7 @@
     <div class="card">
         <div ng-repeat="p in personalProjects" class="project-desc">
             <h2 class="bold">{{p.name}}</h2>
-            <p>{{p.desc}}</p>
-            <p ng-if="p.desc2">{{p.desc2}}</p>
+            <p ng-repeat="d in p.desc">{{d}}</p>
         </div>
     </div>
 </div>
