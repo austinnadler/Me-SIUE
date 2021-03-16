@@ -19,6 +19,22 @@ h1, h2 {
     font-weight: bold;
 }
 
+td {
+    border: 1px solid black;
+    height: 80px;
+    width: 80px;
+    font-size: 30px;
+}
+
+td:hover {
+    cursor: pointer;
+    background-color: #ededed;
+}
+
+table {
+    margin: auto;
+}
+
 .nav-button {
     background-color: #0099ff;
     color: white;
@@ -85,7 +101,7 @@ h1, h2 {
 }
 
 .project-desc {
-    margin: 20px 40px 20px 40px;
+    margin: 20px 80px 20px 80px;
 }
 
 @media only screen and (max-width : 400px) {
@@ -112,8 +128,8 @@ h1, h2 {
     .nav-button {
         background-color: #0099ff;
         color: white;
-        padding: 40px;
-        font-size: 40px;
+        padding: 80px;
+        font-size: 80px;
         text-decoration: none;
     }
 }
