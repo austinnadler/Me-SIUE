@@ -15,7 +15,7 @@ app.controller("extrasController", function($scope, $route, $location, $routePar
 
     $scope.mark = function(event) {
         numTurns++;
-        console.log(numTurns);
+        //console.log(numTurns);
         var pSpace = event.target.id;
         if($scope.board[pSpace] == "") {
             $scope.board[pSpace] = "X";
@@ -35,12 +35,14 @@ app.controller("extrasController", function($scope, $route, $location, $routePar
 
     function checkForWinner() {
         var winner = null;
-        console.log("Checking for winner...");
+        //console.log("Checking for winner...");
         if(isXWin()) {
             winner = "X";
+            console.log("X wins");
         }
         if(isOWin()) {
             winner = "O";
+            console.log("O wins");
         }
         if(winner) {
             setTimeout(alert.bind(null, `${winner} won!`));
