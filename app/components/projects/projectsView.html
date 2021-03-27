@@ -16,30 +16,41 @@
     <button class="btn-fixed" id="btnInd" ng-click="showIndProjects()">Independent</button>
 </div>
 <br>
-<div id="divAmeren" class="card">
-    <div class="center"><img src="assets/img/ameren_logo.png"></div>
-    <div ng-repeat="p in amerenProjects">
-        <h2>{{p.name}}</h2>
-        <p ng-repeat="d in p.desc">{{d}}</p>
-    </div>
-</div>
-<div id="divTrue" class="card">
-    <div class="center"><img src="assets/img/truemfg_logo.png"></div>
-    <div ng-repeat="p in trueProjects">
-        <h2>{{p.name}}</h2>
-        <p ng-repeat="d in p.desc">{{d}}</p>
-    </div>
-</div>
-<div id="divInd" class="card">
+<div id="divAmeren">
     <div class="center">
-       <h1>Independent</h1>
-        <p>You can see the source code for my personal projects at my <a href="https://github.com/austinnadler">GitHub</a>.</p>
-    </div>    
-
-    <div>
-        <div ng-repeat="p in personalProjects">
-            <h2>{{p.name}}</h2>
-            <p ng-repeat="d in p.desc">{{d}}</p>
+        <img src="assets/img/ameren_logo.png">
+        <p ng-repeat="b in amerenBio" class="card-noshadow">{{::b}}</p>
+    </div>
+    <div class="center">
+        <div ng-repeat="p in amerenProjects" class="card grid text-left">
+            <h2>{{::p.name}}</h2>
+            <p ng-repeat="d in p.desc">{{::d}}</p>
         </div>
     </div>
+</div>
+<br>
+<div id="divTrue">
+    <div class="center">
+        <img src="assets/img/truemfg_logo.png">
+        <p ng-repeat="b in trueBio" class="card-noshadow">{{::b}}</p>
+    </div>
+    <div class="center">
+        <div ng-repeat="p in trueProjects" class="card grid text-left">
+            <h2>{{::p.name}}</h2>
+            <p ng-repeat="d in p.desc">{{::d}}</p>
+        </div>
+    </div>   
+</div>
+<div id="divInd">
+    <div class="center">
+        <h1>Independent</h1>
+        <p ng-repeat="b in indBio" class="card-noshadow">{{::b}}</p>
+        <p>You can see the source code for my personal projects at my <a href="https://github.com/austinnadler">GitHub</a>.</p>
+    </div> 
+    <div class="center"> 
+        <div ng-repeat="p in personalProjects" class="card grid text-left">
+            <h2>{{::p.name}}</h2>
+            <p ng-repeat="d in p.desc">{{::d}}</p>
+        </div>
+    </div> 
 </div>

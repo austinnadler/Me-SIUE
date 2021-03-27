@@ -14,8 +14,12 @@
     text-align: center
 }
 
+.text-left {
+    text-align: left;
+}
+
 .card {
-    width: 85%;
+    max-width: 85%;
     margin: auto;
     margin-top: 10px;
     margin-bottom:  10px;
@@ -24,7 +28,24 @@
     border-radius: 5px;
 }
 
-.btn:hover, .btn-fixed {
+.card-noshadow {
+    max-width: 85%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom:  10px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.grid {
+    display: inline-block;
+    width: 400px;
+    /* height: 400px; */
+    vertical-align: top;
+    margin: 10px;
+}
+
+.btn:hover, .btn-fixed:hover {
     cursor: pointer;
 }
 
@@ -71,6 +92,23 @@ a {
     color: #0099ff;
 }
 
+td {
+    border: 1px solid black;
+    height: 80px;
+    width: 80px;
+    font-size: 30px;
+    text-align: center;
+}
+
+td:hover {
+    cursor: pointer;
+    background-color: #ededed;
+}
+
+table {
+    margin: auto;
+}
+
 @media (min-width: 800px) {
 
 /* Applies only to screens larger than 800px */
@@ -78,6 +116,14 @@ a {
     img {
         width: 200px;
         border-radius: 5px;
+    }
+
+    .grid {
+        height: 500px;     
+    }
+
+    .card-noshadow {
+        max-width: 40%;
     }
 
 }
