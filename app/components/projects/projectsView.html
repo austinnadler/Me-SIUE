@@ -6,37 +6,37 @@
         <a href="#!/extras" class="nav-button" style="float: right;"></a>
     </nav>
 </header>
-<div class="card text-center" style="box-shadow: none;">
-    <h1 class="bold">Projects</h1>
+<div class="center">
+    <h1>Projects</h1>
 </div>
-<div class="text-center">
-    <button class="btn" style="background-color: green;" id="btnAll" ng-click="showAllProjects()">All</button>
-    <button class="btn" id="btnAmeren" ng-click="showAmerenProjects()">Ameren Projects</button>
-    <button class="btn" id="btnTrue" ng-click="showTrueProjects()">True Mfg. Projects</button>
-    <button class="btn" id="btnInd" ng-click="showIndProjects()">Independent Projects</button>
+<div class="center">
+    <button class="btn-fixed" style="background: green;" id="btnAll" ng-click="showAllProjects()">All</button>
+    <button class="btn-fixed" id="btnAmeren" ng-click="showAmerenProjects()">Ameren</button>
+    <button class="btn-fixed" id="btnTrue" ng-click="showTrueProjects()">True Mfg.</button>
+    <button class="btn-fixed" id="btnInd" ng-click="showIndProjects()">Independent</button>
 </div>
 <br>
-<div class="card" id="divAmeren">
-    <div class="text-center"><img src="assets/img/ameren_logo.png" class="logo"></div>
-    <div ng-repeat="p in amerenProjects" class="project-desc">
-        <h2 class="bold">{{p.name}}</h2>
+<div id="divAmeren" class="card">
+    <div class="center"><img src="assets/img/ameren_logo.png"></div>
+    <div ng-repeat="p in amerenProjects">
+        <h2>{{p.name}}</h2>
         <p ng-repeat="d in p.desc">{{d}}</p>
     </div>
 </div>
-<div class="card" id="divTrue">
-    <div class="text-center"><img src="assets/img/truemfg_logo.png" class="logo"></div>
-    <div ng-repeat="p in trueProjects" class="project-desc">
-        <h2 class="bold">{{p.name}}</h2>
+<div id="divTrue" class="card">
+    <div class="center"><img src="assets/img/truemfg_logo.png"></div>
+    <div ng-repeat="p in trueProjects">
+        <h2>{{p.name}}</h2>
         <p ng-repeat="d in p.desc">{{d}}</p>
     </div>
 </div>
-<div id="divInd">
-    <div class="text-center" style="margin-top: 20px; margin-bottom: 20px;">
-        <p class="center">You can see the source code for my personal projects at my <a href="https://github.com/austinnadler" class="text-blue">GitHub</a>.</p>
+<div id="divInd" class="card">
+    <div style="margin-top: 20px; margin-bottom: 20px;">
+        <p>You can see the source code for my personal projects at my <a href="https://github.com/austinnadler">GitHub</a>.</p>
     </div>
-    <div class="card">
-        <div ng-repeat="p in personalProjects" class="project-desc">
-            <h2 class="bold">{{p.name}}</h2>
+    <div>
+        <div ng-repeat="p in personalProjects">
+            <h2>{{p.name}}</h2>
             <p ng-repeat="d in p.desc">{{d}}</p>
         </div>
     </div>
