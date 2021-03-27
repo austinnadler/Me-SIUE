@@ -49,14 +49,9 @@ app.controller("projectsController", function($scope) {
 
     $scope.personalProjects = [
         {
-            name: "This Website",
-            desc: ["I develop and maintain this website myself with HTML, CSS, AngularJS, and jQuery."]
+            name: "This Website (AngularJS)",
+            desc: ["I develop and maintain this website myself with HTML, CSS, AngularJS, and jQuery. I am constantly improving this site."]
             //,images: ["assets/img/pmm/0.png", "assets/img/pmm/1.png", "assets/img/pmm/2.png", "assets/img/pmm/3.png", "assets/img/pmm/4.png"]
-        },
-        {
-            name: "ServiceNow Scripting in PDI",
-            desc: ["Working at Ameren got me interesting in the ServiceNow platform. I have a personal developer instance (PDI) in which I practice with scripting things like Business Rules, UI Policies, UI Actions etc.",
-            "I use this instance to show possible solutions to problems brought up by my ITSM managers at Ameren. Eventually, I hope to be a full-time ServiceNow developer."]
         },
         {
             name: "My Project Tracker (AngularJS)",

@@ -67,6 +67,10 @@ html {
     font-size: 16px;
 }
 
+a {
+    color: #0099ff;
+}
+
 @media (min-width: 800px) {
 
 /* Applies only to screens larger than 800px */
