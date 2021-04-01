@@ -12,7 +12,7 @@ app.controller("projectsController", function($scope) {
 
     $scope.amerenBio = [
         "At Ameren, I work in a few different areas. I started out in Performance Analytics and Reporting, creating KPI dashboards for the ITSM team and anyone else who requested any type of reports or dashboards.",
-        "After working in ServiceNow for a few months, I started getting more interested in the platform itself. I was given the opportunity to work on redesigning Ameren's Self-Service Portal, which drew me into ServiceNow development. I have now earned my ServiceNow Certified System Administrator"
+        "After working in ServiceNow for a few months, I started getting more interested in the platform itself. I was given the opportunity to work on redesigning Ameren's Self-Service Portal, which drew me into ServiceNow development. I have now earned my ServiceNow Certified System Administrator certification."
     ];
 
     $scope.trueBio = ["At True, I worked as a Co-op Developer creating dashboard applications in the Epicor ERP with C# and SQL. I learned a lot about professional software development and Agile in this co-op."];
