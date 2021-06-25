@@ -1,23 +1,37 @@
 app.controller("projectsController", function($scope) {
 
-    // if(isMobile()) {
-    //     console.log("Mobile device detected");
-    // } else {
-    //     console.log("Desktop device detected");
-    // }
+    $scope.setNavbar = function() {
+        $("#navHome").removeClass("active");
+        $("#navProjects").addClass("active");
+    }
 
-    // function isMobile() {
-    //     return window.innerWidth < 800;
-    // };
+    var buttonIds = ["btnAll", "btnAccenture", "btnAmeren", "btnTrue", "btnInd"];
+
+    $("#buttons > a").on("click", function () {
+        console.log(this.id + " Clicked");
+        for(var i = 0; i < buttonIds.length; i++) {
+            var id = buttonIds[i];
+            if (id == this.id) {
+                $(`#${id}`).addClass("btn-success");
+            } else {
+                $(`#${id}`).removeClass("btn-success");
+                $(`#${id}`).addClass("btn-primary");
+            }
+        };
+    })
+
+    $scope.accentureBio = [];
 
     $scope.amerenBio = [
-        "At Ameren, I work in a few different areas. I started out in Performance Analytics and Reporting, creating KPI dashboards for the ITSM team and anyone else who requested any type of reports or dashboards.",
-        "After working in ServiceNow for a few months, I started getting more interested in the platform itself. I was given the opportunity to work on redesigning Ameren's Self-Service Portal, which drew me into ServiceNow development. I have now earned my ServiceNow Certified System Administrator"
+        "At Ameren, I worked in a few different areas. I started out in Performance Analytics and Reporting, creating KPI dashboards for the ITSM team and anyone else who requested any type of reports or dashboards.",
+        "After working in ServiceNow for a few months, I started getting more interested in the platform itself. I was given the opportunity to work on redesigning Ameren's Self-Service Portal, which drew me into ServiceNow development. I have now earned my ServiceNow Certified System Administrator Certification."
     ];
 
     $scope.trueBio = ["At True, I worked as a Co-op Developer creating dashboard applications in the Epicor ERP with C# and SQL. I learned a lot about professional software development and Agile in this co-op."];
 
     $scope.indBio = ["My independent projects have quite a bit of variety. I learn best by doing. So, any time I find a new tool or framework, I like to try to get straight into it and start making things."];
+
+    $scope.accentureProjects = [];
 
     $scope.amerenProjects = [
         { 
@@ -97,46 +111,37 @@ app.controller("projectsController", function($scope) {
     // AngularJS + jQuery methods
 
     $scope.showAllProjects = function() {
+        $("#divAccenture").show();
         $("#divAmeren").show();
         $("#divTrue").show();
         $("#divInd").show();
+    }
 
-        $("#btnAll").css("background-color", "green");
-        $("#btnAmeren").css("background-color", "#0099ff");
-        $("#btnTrue").css("background-color", "#0099ff");
-        $("#btnInd").css("background-color", "#0099ff");
+    $scope.showAccentureProjects = function() {
+        $("#divAccenture").show();
+        $("#divAmeren").hide();
+        $("#divTrue").hide();
+        $("#divInd").hide();
     }
 
     $scope.showAmerenProjects = function() {
+        $("#divAccenture").hide();
         $("#divAmeren").show();
         $("#divTrue").hide();
         $("#divInd").hide();
-
-        $("#btnAll").css("background-color", "#0099ff");
-        $("#btnAmeren").css("background-color", "green");
-        $("#btnTrue").css("background-color", "#0099ff");
-        $("#btnInd").css("background-color", "#0099ff");
     }
 
     $scope.showTrueProjects = function() {
+        $("#divAccenture").hide();
         $("#divAmeren").hide();
         $("#divTrue").show();
         $("#divInd").hide();
-
-        $("#btnAll").css("background-color", "#0099ff");
-        $("#btnAmeren").css("background-color", "#0099ff");
-        $("#btnTrue").css("background-color", "green");
-        $("#btnInd").css("background-color", "#0099ff");
     }
 
     $scope.showIndProjects = function() {
+        $("#divAccenture").hide();
         $("#divAmeren").hide();
         $("#divTrue").hide();
         $("#divInd").show();
-
-        $("#btnAll").css("background-color", "#0099ff");
-        $("#btnAmeren").css("background-color", "#0099ff");
-        $("#btnTrue").css("background-color", "#0099ff");
-        $("#btnInd").css("background-color", "green");
     }
 });
