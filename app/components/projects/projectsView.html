@@ -1,74 +1,39 @@
 <title>Austin Nadler - Projects</title>
-<div class="text-center" style="padding-top: 20px;" ng-init="setNavbar()">
+<div class="text-center" ng-init="setNavbar()">
+    <br>
     <div>
         <h1>Projects</h1>
-    </div>
-    <div id="buttons">
-        <a class="btn btn-success" id="btnAll" ng-click="showAllProjects()">All</a>
-        <a class="btn btn-primary" id="btnAccenture" ng-click="showAccentureProjects()">Accenture</a>
-        <a class="btn btn-primary" id="btnAmeren" ng-click="showAmerenProjects()">Ameren</a>
-        <a class="btn btn-primary" id="btnTrue" ng-click="showTrueProjects()">True Mfg.</a>
-        <a class="btn btn-primary" id="btnInd" ng-click="showIndProjects()">Independent</a>
-    </div>
+    </div>    
+    <a type="button" class="btn col-md-2 overflow btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span id="filter">All</span>
+    </a>
+    <ul class="dropdown-menu pull-right">
+        <li class="dropdown-header">Filter by company</li>
+        <li><a ng-click="showAllProjects()" class="dropdown-item" href="#!/projects">All</a></li>
+        <li ng-repeat="company in companies">
+            <a ng-click="showProjects(company.id, company.name)" class="dropdown-item" href="#!/projects">
+                {{company.name}}
+            </a>
+        </li>
+    </ul>
 </div>
-<div id="divAccenture" class="shadow-card">
-    <div class="text-center">
-        <img src="assets/img/accenture_logo.png">
-    </div>
-    <div class="text-center">
-        I have not yet been assigned to a project at Accenture.
-    </div>
-    <div>
-        <p ng-repeat="b in accentureBio">{{::b}}</p>
-    </div>
-    <div>
-        <div ng-repeat="p in accentureProjects">
-            <h2>{{::p.name}}</h2>
-            <p ng-repeat="d in p.desc">{{::d}}</p>
+<div class="container">
+    <div ng-repeat="company in companies" id="div{{company.id}}">
+        <br>
+        <div class="text-center">
+            <img ng-if="company.image" src="assets/img/{{company.image}}">
+            <h1 ng-if="!company.image">{{company.name}}</h1>
         </div>
-    </div>
-</div>
-<div id="divAmeren" class="shadow-card">
-    <div class="text-center">
-        <img src="assets/img/ameren_logo.png">
-    </div>
-    <div>
-        <p ng-repeat="b in amerenBio">{{::b}}</p>
-    </div>
-    <div>
-        <div ng-repeat="p in amerenProjects">
-            <h2>{{::p.name}}</h2>
-            <p ng-repeat="d in p.desc">{{::d}}</p>
+        <div>
+            <p ng-repeat="bio in company.bio" ng-class="{'text-center': company.projects.length == 0}">{{bio}}</p>
         </div>
-    </div>
-</div>
-<div id="divTrue" class="shadow-card">
-    <div class="text-center">
-        <img src="assets/img/truemfg_logo.png">
-    </div>
-    <div>
-        <p ng-repeat="b in trueBio">{{::b}}</p>
-    </div>
-    <div>
-        <div ng-repeat="p in trueProjects">
-            <h2>{{::p.name}}</h2>
-            <p ng-repeat="d in p.desc">{{::d}}</p>
-        </div>
-    </div>
-</div>
-<div id="divInd" class="shadow-card">
-    <div class="text-center">
-        <h1>Independent</h1>
-    </div>
-    <div>
-        <p ng-repeat="b in indBio">{{::b}}</p>
-        <p>You can see the source code for my personal projects at my <a
-                href="https://github.com/austinnadler">GitHub</a>.</p>
-    </div>
-    <div>
-        <div ng-repeat="p in personalProjects">
-            <h2>{{::p.name}}</h2>
-            <p ng-repeat="d in p.desc">{{::d}}</p>
+        <div class="row">
+            <div ng-repeat="project in company.projects" class="col-md-4">
+                <div class="inner shadow">
+                    <h4>{{project.name}}</h4>
+                    <p ng-repeat="description in project.description">{{description}}</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
