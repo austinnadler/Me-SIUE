@@ -23,22 +23,24 @@ app.controller("projectsController", function ($scope) {
             projects: [
                 {
                     name: "ServiceNow Self-Service Portal Redesign (AngularJS)",
-                    description: ["I am working with the service catalog manager and UX team to update Ameren's ServiceNow Self-Service Portal.",
-                        "My responsibilies on this project include researching the capabilities of the portal and building a functional prototype in ServiceNow using HTML, CSS and AngularJS, and deploying updates to the production environment through change management."]
+                    description: ["I worked with the service catalog manager and UX team to update Ameren's ServiceNow Self-Service Portal.",
+                        "My responsibilies on this project included researching the capabilities of the portal and building a functional prototype in ServiceNow using HTML, CSS and AngularJS, and deploying updates to the production environment through change management.",
+                        "I built a few really cool widgets, including one to present a service catalog with a group of cards representing categories, with subcategories liseted below with dropdowns linking to popular catalog items. Another widget I built brought approvals to the service portal, and allowed approvers to view important information on the records being approved and approve or reject them directly from the portal home page."
+                    ]
                 },
                 {
                     name: "ServiceNow KPI Dashboards",
-                    description: ["A big part of my co-op with Ameren involves creating and maintaining KPIs and dashboards for the IT Service Management team. I use ServiceNow Performance Analytics and Reports to collect data on Key Performance Indicators to help the ITSM Process Managers see metrics on their areas, and allow other people, such as assignment group managers, directors, and VPs, see how their team is affecting those KPIs."]
+                    description: ["A big part of my co-op with Ameren involved creating and maintaining KPIs and dashboards for the IT Service Management team. I used ServiceNow Performance Analytics and Reports to collect data on Key Performance Indicators to help the ITSM Process Managers see metrics on their areas, and allow other people, such as assignment group managers, directors, and VPs, see how their team is affecting those KPIs."]
                 },
                 {
                     name: "ServiceNow CMDB Cleanup Initiatives",
-                    description: ["I have been invloved in several data cleanup initiatives in the ServiceNow Configuration Management Database.",
-                        "Ameren has a lot of integrations connected to ServiceNow, and sometimes things get messed up and cause duplicate records to be created. We use the ServiceNow GUI as well as an Oracle database instance to analyze this data and determine which records should be deleted. Then, we work with our ServiceNow developer team to look into the integration and determine what is causing the duplicate records to be created, so that it can be corrected."]
+                    description: ["I was involved in several data cleanup initiatives in the ServiceNow Configuration Management Database.",
+                        "Ameren has a lot of integrations connected to ServiceNow, and sometimes things get messed up and cause duplicate records to be created. We used the ServiceNow GUI as well as an Oracle database instance to analyze this data and determine which records should be deleted. Then, we worked with the appropriate team(s) to look into the integration and determine what was causing the duplicate records to be created, so that it could be corrected."]
                 },
                 {
                     name: "ITSM SharePoint Site / Digital Asset Management Sub-site",
-                    description: ["I worked with the ITSM process managers to create an informational company-facing SharePoint site, and now maintain that site. The managers upload relevant documents to their parts of the page.",
-                        "I also created a subsite for the DAM project, which involves discovery and service mapping."]
+                    description: ["I worked with the ITSM process managers to create an informational company-facing SharePoint site for the team.",
+                        "I also created a subsite for a specific project that was big enough to warrant it's own dedicated site for special announcements, training, and documentation."]
                 }
             ]
         },
