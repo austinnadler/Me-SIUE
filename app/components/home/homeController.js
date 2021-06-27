@@ -14,15 +14,18 @@ app.controller("homeController", function($scope) {
     $scope.links = [
         {
             title: "LinkedIn",
-            url: "https://www.linkedin.com/in/austin-nadler-a011b41a7/"
+            url: "https://www.linkedin.com/in/austin-nadler-a011b41a7/",
+            icon: "linkedin"
         },
         {
             title: "Resume",
-            url: "assets/files/AustinNadlerResume.pdf"
+            url: "assets/files/AustinNadlerResume.pdf",
+            icon: "file"
         },
         {
             title: "GitHub",
-            url: "https://github.com/austinnadler"
+            url: "https://github.com/austinnadler",
+            icon: "github"
         }
     ];
 

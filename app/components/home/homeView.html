@@ -9,12 +9,12 @@
             <p ng-repeat="b in bio">{{::b}}</p>
         </div>
         <div>
-            <a ng-repeat="link in links" class="btn btn-primary" href="{{::link.url}}" target="_blank">{{::link.title}}</a>
+            <a ng-repeat="link in links" class="btn btn-primary" href="{{::link.url}}" target="_blank"><i class="fa fa-{{::link.icon}}"></i>&nbsp;{{::link.title}}</a>
         </div>
     </div>
     <div class="col-12 shadow">
         <h1>Experience</h1>
-        <div><a class="btn btn-primary" id="btnProjects" href="#!/projects">Projects</a></div>
+        <div><a class="btn btn-primary" id="btnProjects" href="#!/projects"><i class="fa fa-hammer"></i>&nbsp;Projects</a></div>
         <div ng-repeat="company in companies">
             <br>
             <a href="{{::company.url}}" target="_blank">
