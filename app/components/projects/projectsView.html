@@ -31,6 +31,7 @@
             <div ng-repeat="project in company.projects" class="col-md-4">
                 <div class="inner shadow">
                     <h4>{{project.name}}</h4>
+                    <a ng-if="project.link" href="{{project.link}}" target="_blank" class="btn btn-primary"><i class="fa fa-github"></i>&nbsp;&nbsp;GitHub</a>
                     <p ng-repeat="description in project.description">{{description}}</p>
                 </div>
             </div>

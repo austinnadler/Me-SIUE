@@ -1,4 +1,8 @@
-app.controller("extrasController", function($scope, $route, $location, $routeParams) {
+app.controller("extrasController", function($scope) {
+
+    $("#navHome").removeClass("active");
+    $("#navProjects").removeClass("active");
+    $("#navExtras").addClass("active");
 
     $scope.board = ["", "", "", "", "", "", "", "", ""];
     var numTurns = 0;

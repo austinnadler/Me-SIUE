@@ -29,6 +29,17 @@
     text-overflow: ellipsis;
 }
 
+table {
+    width: 300px;
+    margin: auto;
+}
+
+td {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+}
+
 /* #filter:after {
     content: ""; 
     position:absolute;

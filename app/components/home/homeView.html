@@ -17,19 +17,12 @@
     <div class="col-12 shadow">
         <h1>Experience</h1>
         <div><a class="btn btn-primary" id="btnProjects" href="#!/projects">Projects</a></div>
-        <br>
-        <a href="https://www.accenture.com">
-            <img src="assets/img/accenture_logo.png">
-        </a>
-        <p>{{::accentureExperience}}</p>
-        <a href="https://www.ameren.com/">
-            <img src="assets/img/ameren_logo.png">
-        </a>
-        <p>{{::amerenExperience}}</p>
-        <br>
-        <a href="https://www.truemfg.com">
-            <img src="assets/img/truemfg_logo.png">
-        </a>
-        <p>{{::trueExperience}}</p>
+        <div ng-repeat="company in companies">
+            <br>
+            <a href="{{company.url}}">
+                <img src="assets/img/{{company.image}}">
+            </a>
+            <p>{{company.description}}</p> 
+        </div>
     </div>
 </div>
