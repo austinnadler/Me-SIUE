@@ -1,38 +1,34 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/styles/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.rawgit.com/AlphaGit/ng-pattern-restrict/master/src/ng-pattern-restrict.min.js"></script>
     <script src="https://kit.fontawesome.com/09a54ca737.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
     <script src="app/app.module.js"></script>
     <script src="app/app.routes.js"></script>
     <script src="app/components/home/homeController.js"></script>
     <script src="app/components/projects/projectsController.js"></script>
     <script src="app/components/extras/extrasController.js"></script>
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active" id="navHome">
-                  <a class="nav-link" id="navHome" href="#!/home"><i class="fa fa-home"></i>&nbsp;Home</a>
-                </li>
-                <li class="nav-item" id="navProjects">
-                  <a class="nav-link" id="navProjects" href="#!/projects"><i class="fa fa-hammer"></i>&nbsp;Projects</a>
-                </li>
-              </ul>
+        <nav class="navbar navbar-expand navbar-dark bg-primary">
+            <div class="navbar-nav">
+                <a class="nav-link" id="navHome" href="#!/home"><i class="fa fa-home"></i>&nbsp;Home</a>
+                <a class="nav-link" id="navProjects" href="#!/projects"><i class="fa fa-hammer"></i>&nbsp;Projects</a>
             </div>
-          </nav>
+        </nav>
     </header>
     <main>
         <div ng-app="app" ng-cloak>
@@ -43,4 +39,5 @@
         <p>&copy; Austin Nadler</p>
     </footer>
 </body>
+
 </html>
