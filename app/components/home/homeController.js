@@ -1,10 +1,8 @@
 app.controller("homeController", function($scope) {
 
-    $scope.setNavbar = function() {
-        $("#navHome").addClass("active");
-        $("#navProjects").removeClass("active");
-    }
-
+    $("#navHome").addClass("active");
+    $("#navProjects").removeClass("active");
+   
     $scope.jobTitle = "ServiceNow Developer Analyst at Accenture Federal Services"
 
     $scope.bio = [

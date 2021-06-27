@@ -1,5 +1,8 @@
 app.controller("projectsController", function ($scope) {
 
+    $("#navHome").removeClass("active");
+    $("#navProjects").addClass("active");
+
     // Data
 
     $scope.companies = [
@@ -110,11 +113,6 @@ app.controller("projectsController", function ($scope) {
     ];
 
     // Functions
-
-    $scope.setNavbar = function () {
-        $("#navHome").removeClass("active");
-        $("#navProjects").addClass("active");
-    }
 
     // Set the dropdown text to the selected copmany name, show that groups div and hide others
     $scope.showProjects = function (groupId, groupName) {
