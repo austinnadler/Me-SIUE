@@ -109,39 +109,31 @@ app.controller("projectsController", function ($scope) {
         }
     ];
 
-    // Funcitons
+    // Functions
 
     $scope.setNavbar = function () {
         $("#navHome").removeClass("active");
         $("#navProjects").addClass("active");
     }
 
+    // Set the dropdown text to the selected copmany name, show that groups div and hide others
     $scope.showProjects = function (groupId, groupName) {
         $("#filter").text(groupName);
-        $("#btnAll").removeClass("btn-success");
-        $("#btnAll").addClass("btn-primary");
-        $(`#btn${groupId}`).removeClass("btn-primary");
-        $(`#btn${groupId}`).addClass("btn-success");
         $(`#div${groupId}`).show();
         for (var i = 0; i < $scope.companies.length; i++) {
             var c = $scope.companies[i];
             if (c.id != groupId) {
                 $(`#div${c.id}`).hide();
-                $(`#btn${c.id}`).removeClass("btn-success");
-                $(`#btn${c.id}`).addClass("btn-primary");
             }
         }
     }
 
+    // Set dropdown text to "All", show all groups divs
     $scope.showAllProjects = function () {
         $("#filter").text("All");
-        $("#btnAll").removeClass("btn-primary");
-        $("#btnAll").addClass("btn-success");
         for (var i = 0; i < $scope.companies.length; i++) {
             var c = $scope.companies[i];
             $(`#div${c.id}`).show();
-            $(`#btn${c.id}`).removeClass("btn-success");
-            $(`#btn${c.id}`).addClass("btn-primary");
         }
     }
 
