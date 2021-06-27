@@ -29,7 +29,7 @@ app.controller("projectsController", function ($scope) {
                     name: "ServiceNow Self-Service Portal Redesign (AngularJS)",
                     description: ["I worked with the service catalog manager and UX team to update Ameren's ServiceNow Self-Service Portal.",
                         "My responsibilies on this project included researching the capabilities of the portal and building a functional prototype in ServiceNow using HTML, CSS and AngularJS, and deploying updates to the production environment through change management.",
-                        "I built a few really cool widgets, including one to present a service catalog with a group of cards representing categories, with subcategories liseted below with dropdowns linking to popular catalog items. Another widget I built brought approvals to the service portal, and allowed approvers to view important information on the records being approved and approve or reject them directly from the portal home page."
+                        "I built a few really cool widgets, including one to present a service catalog with a group of cards representing categories, with subcategories liseted below with dropdowns urling to popular catalog items. Another widget I built brought approvals to the service portal, and allowed approvers to view important information on the records being approved and approve or reject them directly from the portal home page."
                     ]
                 },
                 {
@@ -74,47 +74,47 @@ app.controller("projectsController", function ($scope) {
                 {
                     name: "This Website (AngularJS)",
                     description: ["I develop and maintain this website myself with HTML, CSS, Bootstrap, AngularJS, and jQuery. I am constantly improving this site."],
-                    link: "https://github.com/austinnadler/Me-SIUE"
+                    url: "https://github.com/austinnadler/Me-SIUE"
                 },
                 {
                     name: "My Project Tracker (AngularJS)",
                     description: ["My Project Tracker is a database driven AngularJS Single-Page-Application that I created to keep track of the different projects that I am working on for both work and school."],
-                    link: "https://github.com/austinnadler/MyProjectTracker-AngularJS"
+                    url: "https://github.com/austinnadler/MyProjectTracker-AngularJS"
                 },
                 {
                     name: "Customer Management (JavaFX, MySQL)",
                     description: ["Customer Management is a simple database driven JavaFX app that I built in order to learn the basics of JavaFX and JDBC. I also created a CSV version to refresh on file IO in Java."],
-                    link: "https://github.com/austinnadler/JavaFX-Customer-Management"
+                    url: "https://github.com/austinnadler/JavaFX-Customer-Management"
                 },
                 {
                     name: "Sales Database GUI (C#, Microsoft SQL Server)",
                     description: ["Sales Database GUI is a Windows Forms app created in C# to manage an Microsoft SQL Server database. The database has four tables: customer, item, order, and order_item. It allows for creating, updating, and deleting customers, items, and orders."],
-                    link: "https://github.com/austinnadler/StoreDatabaseGUI"
+                    url: "https://github.com/austinnadler/StoreDatabaseGUI"
                 },
                 {
                     name: "Parking Member Management (HTML, CSS, jQuery, PHP, MySQL",
                     description: ["Parking Member Management is a database driven web app developed as school project. The concept is that a company could use the app to manage permits and vehicles for a parking lot/garage."],
-                    link: "https://github.com/austinnadler/Parking-Member-Management"
+                    url: "https://github.com/austinnadler/Parking-Member-Management"
                 },
                 {
                     name: "Inventory Management System (C++)",
                     description: ["Inventory Management System is a command line program written in C++ to perform adminstrative functions to a list of items. It reads a file to generate a list of items, some of which have special restrictions such as a minimum purchaser age. It also allows the user to edit the inventory file and save an updated version of it."],
-                    link: "https://github.com/austinnadler/Inventory-Management-System"
+                    url: "https://github.com/austinnadler/Inventory-Management-System"
                 },
                 {
                     name: "POS System (C++)",
                     description: ["POS System is a program based on Inventory System that processes transactions and maintains a perpetual inventory system by updating the count of each item sold once the transaction has been completed."],
-                    link: "https://github.com/austinnadler/POS-System"
+                    url: "https://github.com/austinnadler/POS-System"
                 },
                 {
                     name: "Gibberish Generator (C++)",
                     description: ["Gibberish Generator is a small utility program created to quickly generate input files composed of random characters and numbers for testing other programs. It was created to save time creating items to test Inventory Management System and POS System."],
-                    link: "https://github.com/austinnadler/GibberishGenerator"
+                    url: "https://github.com/austinnadler/GibberishGenerator"
                 },
                 {
                     name: "Battleship (Java)",
                     description: ["Battleship is a simple command-line battleship game that uses characters to represent spaces on the board."],
-                    link: "https://github.com/austinnadler/Command-Battleship"
+                    url: "https://github.com/austinnadler/Command-Battleship"
                 }
             ]
         }

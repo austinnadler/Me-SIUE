@@ -11,6 +11,21 @@ app.controller("homeController", function($scope) {
         "I am currently working in consulting at Accenture Federal Services as a ServiceNow Developer Analyst."
     ];
 
+    $scope.links = [
+        {
+            title: "LinkedIn",
+            url: "https://www.linkedin.com/in/austin-nadler-a011b41a7/"
+        },
+        {
+            title: "Resume",
+            url: "assets/files/AustinNadlerResume.pdf"
+        },
+        {
+            title: "GitHub",
+            url: "https://github.com/austinnadler"
+        }
+    ];
+
     $scope.companies = [
         {
             url: "https://www.accenture.com",

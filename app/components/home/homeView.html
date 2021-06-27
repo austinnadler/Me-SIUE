@@ -9,9 +9,7 @@
             <p ng-repeat="b in bio">{{::b}}</p>
         </div>
         <div>
-            <a class="btn btn-primary" href="https://www.linkedin.com/in/austin-nadler-a011b41a7/" target="_blank">LinkedIn</a>
-            <a class="btn btn-primary" href="assets/files/AustinNadlerResume.pdf" target="_blank">Resume</a>
-            <a class="btn btn-primary" href="https://github.com/austinnadler" target="_blank">GitHub</a>
+            <a ng-repeat="link in links" class="btn btn-primary" href="{{::link.url}}" target="_blank">{{::link.title}}</a>
         </div>
     </div>
     <div class="col-12 shadow">
@@ -19,10 +17,10 @@
         <div><a class="btn btn-primary" id="btnProjects" href="#!/projects">Projects</a></div>
         <div ng-repeat="company in companies">
             <br>
-            <a href="{{company.url}}" target="_blank">
-                <img src="assets/img/{{company.image}}">
+            <a href="{{::company.url}}" target="_blank">
+                <img src="assets/img/{{::company.image}}">
             </a>
-            <p>{{company.description}}</p> 
+            <p>{{::company.description}}</p> 
         </div>
     </div>
 </div>

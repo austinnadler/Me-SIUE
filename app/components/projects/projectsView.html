@@ -12,27 +12,27 @@
         <li><a ng-click="showAllProjects()" class="dropdown-item" href="#!/projects">All</a></li>
         <li ng-repeat="company in companies">
             <a ng-click="showProjects(company.id, company.name)" class="dropdown-item" href="#!/projects">
-                {{company.name}}
+                {{::company.name}}
             </a>
         </li>
     </ul>
 </div>
 <div class="container">
-    <div ng-repeat="company in companies" id="div{{company.id}}">
+    <div ng-repeat="company in companies" id="div{{::company.id}}">
         <br>
         <div class="text-center">
-            <img ng-if="company.image" src="assets/img/{{company.image}}">
-            <h1 ng-if="!company.image">{{company.name}}</h1>
+            <img ng-if="company.image" src="assets/img/{{::company.image}}">
+            <h1 ng-if="!company.image">{{::company.name}}</h1>
         </div>
         <div>
-            <p ng-repeat="bio in company.bio" ng-class="{'text-center': company.projects.length == 0}">{{bio}}</p>
+            <p ng-repeat="bio in company.bio" ng-class="{'text-center': company.projects.length == 0}">{{::bio}}</p>
         </div>
         <div class="row">
             <div ng-repeat="project in company.projects" class="col-md-4">
                 <div class="inner shadow">
-                    <h4>{{project.name}}</h4>
-                    <a ng-if="project.link" href="{{project.link}}" target="_blank" class="btn btn-primary"><i class="fa fa-github"></i>&nbsp;&nbsp;GitHub</a>
-                    <p ng-repeat="description in project.description">{{description}}</p>
+                    <h4>{{::project.name}}</h4>
+                    <a ng-if="project.url" href="{{::project.url}}" target="_blank" class="btn btn-primary"><i class="fa fa-github"></i>&nbsp;&nbsp;GitHub</a>
+                    <p ng-repeat="description in project.description">{{::description}}</p>
                 </div>
             </div>
         </div>
