@@ -90,7 +90,6 @@ app.controller("projectsController", function ($scope) {
                     name: "Sales Database GUI (C#, Microsoft SQL Server)",
                     description: ["Sales Database GUI is a Windows Forms app created in C# to manage an Microsoft SQL Server database. The database has four tables: customer, item, order, and order_item. It allows for creating, updating, and deleting customers, items, and orders."],
                     link: "https://github.com/austinnadler/StoreDatabaseGUI"
-                    
                 },
                 {
                     name: "Parking Member Management (HTML, CSS, jQuery, PHP, MySQL",
@@ -125,7 +124,7 @@ app.controller("projectsController", function ($scope) {
 
     // Set the dropdown text to the selected copmany name, show that groups div and hide others
     $scope.showProjects = function (groupId, groupName) {
-        $("#filter").text(groupName);
+        $("#filterText").text(groupName);
         $(`#div${groupId}`).show();
         for (var i = 0; i < $scope.companies.length; i++) {
             var c = $scope.companies[i];
@@ -137,7 +136,7 @@ app.controller("projectsController", function ($scope) {
 
     // Set dropdown text to "All", show all groups divs
     $scope.showAllProjects = function () {
-        $("#filter").text("All");
+        $("#filterText").text("All");
         for (var i = 0; i < $scope.companies.length; i++) {
             var c = $scope.companies[i];
             $(`#div${c.id}`).show();

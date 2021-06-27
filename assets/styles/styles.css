@@ -40,7 +40,7 @@ td {
     height: 100px;
 }
 
-/* #filter:after {
+#filterText:after {
     content: ""; 
     position:absolute;
     right: 5%;
@@ -51,7 +51,7 @@ td {
     border-bottom: 0 dotted;
     border-left: 4px solid transparent;
     display: inline-block;
-} */
+}
 
 img {
     max-width: 80%;
