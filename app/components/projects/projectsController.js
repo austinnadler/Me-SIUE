@@ -73,7 +73,7 @@ app.controller("projectsController", function ($scope) {
             projects: [
                 {
                     name: "This Website (AngularJS)",
-                    description: ["I develop and maintain this website myself with HTML, CSS, Bootstrap, AngularJS, and jQuery. I am constantly improving this site."],
+                    description: ["I develop and maintain this website myself with HTML, CSS, Bootstrap, AngularJS, and jQuery. I am constantly improving this site.", "Although AngularJS is no longer supported (after December 31, 2021), I plan to keep using it for this site because SIUE's personal web space program only provides a basic HTML server. However, I have also created this site with React in order to get familiar with that library."],
                     url: "https://github.com/austinnadler/Me-SIUE"
                 },
                 {
