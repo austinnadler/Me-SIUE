@@ -1,3 +1,5 @@
+/* Padding on col-12 and inner allow for spacing between the project cards in the row */
+
 .col-12 {
     border: 1px solid rgb(190, 190, 190);
     border-radius: 5px;

@@ -12,9 +12,27 @@ app.controller("projectsController", function ($scope) {
             name: "Accenture Federal Services",
             image: "accenture_logo.png",
             bio: [
-                "I have not yet been assigned to a project at AFS"
+                "I am currently working as a ServiceNow O&M Developer for a federal government client in the financial sector. This is my first real world experience as a ServiceNow Developer, and in the short time that I have been in this position I have learned a lot about the platform.",
+                "I have improved upon existing skills, such as basic client and server scripting, service catalog creation and maintenance, and have also gained a ton of knowledge in things like script includes with GlideAjax, workflows, ACLs, and more.",
+                "This position was great for taking me out of my comfort zone, and bringing me into a sink or swim environment with a team of intelligent and helpful people to answer my many questions and point me in the right direction any time I get stuck.",
+                "AFS also has a huge focus on personal development, and encourages and rewards employees for learning new skills and earning certifications. To date, I have obtained two certifications in the three months that I have been with the company."
             ],
-            projects: []
+            projects: [
+                {
+                    name: "O&M Development",
+                    description: [
+                        "Most of my development work thus far has been in the IT Service Management Suite.",
+                        "Whether it be creating catalog items and workflows or configuration or customization of ITSM related forms, I have gained a lot of valuable experience in the short time I have been in this position that transfers very well to all areas of ServiceNow and ServiceNow development."
+                    ]
+                },
+                {
+                    name: "Upgrade Preparation & Testing",
+                    description: [
+                        "I get to participate in upgrade preparation and regression testing when the client upgrades their instances every other release.",
+                        "My first upgrade was from Paris to Rome, and I focused on highlighting new features of the platform that were added in either Rome or the release in between, which was Quebec. I also noted any time there was a change that may affect the functionality of current processes."
+                    ]
+                }
+            ]
         },
         {
             id: "Ameren",
@@ -22,14 +40,14 @@ app.controller("projectsController", function ($scope) {
             image: "ameren_logo.png",
             bio: [
                 "At Ameren, I worked in a few different areas. I started out in Performance Analytics and Reporting, creating KPI dashboards for the ITSM team and anyone else who requested any type of reports or dashboards.",
-                "After working in ServiceNow for a few months, I started getting more interested in the platform itself. I was given the opportunity to work on redesigning Ameren's Self-Service Portal, which drew me into ServiceNow development. I have now earned my ServiceNow Certified System Administrator Certification."
+                "After working in ServiceNow for a few months, I started getting more interested in the platform itself. I was given the opportunity to work on redesigning Ameren's Self-Service Portal, which drew me into ServiceNow development."
             ],
             projects: [
                 {
                     name: "ServiceNow Self-Service Portal Redesign (AngularJS)",
                     description: ["I worked with the service catalog manager and UX team to update Ameren's ServiceNow Self-Service Portal.",
                         "My responsibilies on this project included researching the capabilities of the portal and building a functional prototype in ServiceNow using HTML, CSS and AngularJS, and deploying updates to the production environment through change management.",
-                        "I built a few really cool widgets, including one to present a service catalog with a group of cards representing categories, with subcategories liseted below with dropdowns urling to popular catalog items. Another widget I built brought approvals to the service portal, and allowed approvers to view important information on the records being approved and approve or reject them directly from the portal home page."
+                        "I built a few really cool widgets, including one to present a service catalog as a group of cards representing categories, with subcategories listed below with dropdowns linking to popular catalog items. Another widget I built brought approvals to the service portal, and allowed approvers to view important fields on the records being approved and approve or reject them directly from the portal home page."
                     ]
                 },
                 {
@@ -77,9 +95,20 @@ app.controller("projectsController", function ($scope) {
                     url: "https://github.com/austinnadler/Me-SIUE"
                 },
                 {
-                    name: "My Project Tracker (AngularJS)",
-                    description: ["My Project Tracker is a database driven AngularJS Single-Page-Application that I created to keep track of the different projects that I am working on for both work and school."],
-                    url: "https://github.com/austinnadler/MyProjectTracker-AngularJS"
+                    name: "This Website Again (React)",
+                    description: [
+                        "My first React project was to recreate this website using React.",
+                        "Although for now I will still be using the AngularJS version, this was a great way to get familiar with the most basics pieces of react like the cli, components, routing, and using bootstrap within JSX."
+                    ],
+                    url: "https://github.com/austinnadler/Me-SIUE-React"
+                },
+                {
+                    name: "Project Tracker (React, Node.js, MySQL)",
+                    description: [
+                        "Project Tracker is a React SPA that uses node/express to connect to a MySQL database to create and maintain projects and the tasks associated with them.",
+                        "It uses React, React-Bootstrap, Bootstrap, and Axios for the front end, and Node.js and express to connect to the MySQL database."
+                    ],
+                    url: "https://github.com/austinnadler/react-express-mysql-projecttracker"
                 },
                 {
                     name: "Customer Management (JavaFX, MySQL)",
