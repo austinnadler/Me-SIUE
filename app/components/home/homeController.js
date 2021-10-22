@@ -4,7 +4,7 @@ app.controller("homeController", function($scope) {
     $("#navProjects").removeClass("active");
     $("#navExtras").removeClass("active");
    
-    $scope.jobTitle = "ServiceNow Developer Analyst at Accenture Federal Services"
+    $scope.jobTitle = "ServiceNow Developer Analyst at Accenture Federal Services";
 
     $scope.bio = [
         "I am a senior at Southern Illinois University Edwardsville studying Computer Management & Information Systems with a minor in Computer Science.",
@@ -17,11 +17,11 @@ app.controller("homeController", function($scope) {
             url: "https://www.linkedin.com/in/austin-nadler-a011b41a7/",
             icon: "linkedin"
         },
-        {
-            title: "Resume",
-            url: "assets/files/AustinNadlerResume.pdf",
-            icon: "file"
-        },
+        // {
+        //     title: "Resume",
+        //     url: "assets/files/AustinNadlerResume.pdf",
+        //     icon: "file"
+        // },
         {
             title: "GitHub",
             url: "https://github.com/austinnadler",
@@ -29,11 +29,32 @@ app.controller("homeController", function($scope) {
         }
     ];
 
+    $scope.certifications = [
+        // $scope.certifications = "ICAgile Certified Professional - ServiceNow CSA - ServiceNow CIS-ITSM & ITSM Certified Professional - ServiceNow CIS-APM";
+        "Certified System Adminstrator",
+        "Certified Implementation Specialist - IT Service Management",
+        "Certified Implementation Specialist - Application Portfolio Management"        
+    ];
+
+    // $scope.skills = [
+    //     "JavaScript",
+    //     "React",
+    //     "AngularJS",
+    //     "Angular",
+    //     "jQuery",
+    //     "HTML/CSS",
+    //     "SQL (MySQL, Microsoft SQL Server, Oracle)",
+    //     "Java, JavaFX",
+    //     "C#",
+    //     "C++",
+    //     "PHP"
+    // ];
+
     $scope.companies = [
         {
             url: "https://www.accenture.com",
             image: "accenture_logo.png",
-            description: "I have been working for Accenture Federal Services as a ServiceNow Developer Analyst since the end of June 2021. AFS is a consulting firm that works with US Government clients."
+            description: "I have been working for Accenture Federal Services as a ServiceNow Developer Analyst since the end of June 2021. AFS is a consulting firm that works with US Government clients. AFS is a subsidiary of Accenture, which is one of the largest technology consulting firm in the world!"
         },
         {
             url: "https://www.ameren.com/",
