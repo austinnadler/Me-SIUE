@@ -4,11 +4,11 @@ app.controller("homeController", function($scope) {
     $("#navProjects").removeClass("active");
     $("#navExtras").removeClass("active");
    
-    $scope.jobTitle = "ServiceNow Developer Analyst at Accenture Federal Services";
+    $scope.jobTitle = "ServiceNow Developer at Accenture Federal Services";
 
     $scope.bio = [
         "I am a senior at Southern Illinois University Edwardsville studying Computer Management & Information Systems with a minor in Computer Science.",
-        "I am currently working in consulting at Accenture Federal Services as a ServiceNow Developer Analyst."
+        "I am currently working in consulting at Accenture Federal Services as a ServiceNow Developer."
     ];
 
     $scope.links = [
@@ -29,12 +29,16 @@ app.controller("homeController", function($scope) {
         }
     ];
 
-    $scope.certifications = [
-        // $scope.certifications = "ICAgile Certified Professional - ServiceNow CSA - ServiceNow CIS-ITSM & ITSM Certified Professional - ServiceNow CIS-APM";
+    $scope.snCertifications = [
         "Certified System Adminstrator",
         "Certified Implementation Specialist - IT Service Management",
         "Certified Implementation Specialist - Application Portfolio Management"        
     ];
+
+    $scope.genCertifications = [
+        "ICAgile Certified Professional",
+        "PC Pro"
+    ]
 
     // $scope.skills = [
     //     "JavaScript",

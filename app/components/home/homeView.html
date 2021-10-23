@@ -13,18 +13,27 @@
         </div>
     </div>
     <!-- <div class="row"> -->
-        <!-- <div class="col-12 shadow">
+        <div class="col-12 shadow">
             <h1>Certifications</h1>
             <div class="row">
-                <div class="col-4"></div>
-                <div class="col-4">
-                    <div ng-repeat="cert in certifications">
-                        {{::cert}}
-                    </div>
+                <div class="col-md-6 text-left">
+                    <h5 class="text-center">ServiceNow</h5>
+                    <ul>
+                        <li ng-repeat="cert in snCertifications">
+                            {{::cert}}
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-4"></div>
+                <div class="col-md-6 text-left">
+                    <h5 class="text-center">General</h5>
+                    <ul>
+                        <li ng-repeat="cert in genCertifications">
+                            {{::cert}}
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div> -->
+        </div>
         <!-- <div class="col-12 shadow">
             <h1>Skills</h1>
             <div ng-repeat="skill in skills">
