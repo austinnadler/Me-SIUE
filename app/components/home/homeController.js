@@ -37,7 +37,8 @@ app.controller("homeController", function($scope) {
 
     $scope.genCertifications = [
         "ICAgile Certified Professional",
-        "PC Pro"
+        "Testout PC Pro",
+        "Testout Network Pro"
     ]
 
     // $scope.skills = [
