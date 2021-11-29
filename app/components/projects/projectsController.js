@@ -8,14 +8,20 @@ app.controller("projectsController", function ($scope) {
 
     $scope.companies = [
         {
+            id: "EdwardJones",
+            name: "Edward Jones",
+            image: "ej_logo.png",
+            bio: [
+                "I start at Edward Jones on December 6th. I will be a ServiceNow Developer/Automation Engineer."
+            ]
+        },
+        {
             id: "Accenture",
             name: "Accenture Federal Services",
             image: "accenture_logo.png",
             bio: [
-                "I am currently working as a ServiceNow O&M Developer for a federal government client in the financial sector. This is my first real world experience as a ServiceNow Developer, and in the short time that I have been in this position I have learned a lot about the platform.",
-                "I have improved upon existing skills, such as basic client and server scripting, service catalog creation and maintenance, and have also gained a ton of knowledge in things like script includes with GlideAjax, workflows, ACLs, and more.",
-                "This position was great for taking me out of my comfort zone, and bringing me into a sink or swim environment with a team of intelligent and helpful people to answer my many questions and point me in the right direction any time I get stuck.",
-                "AFS also has a huge focus on personal development, and encourages and rewards employees for learning new skills and earning certifications. To date, I have obtained two certifications in the three months that I have been with the company."
+                "In the short time that I spent in my first full-time role, I improved on existing skills, such as basic client and server scripting, service catalog creation and maintenance, and also gained a ton of knowledge in things like script includes with GlideAjax, workflows, ACLs, and more.",
+                "This position was great for taking me out of my comfort zone, and bringing me into a sink or swim environment with a team of intelligent and helpful people to answer my many questions and point me in the right direction any time I got stuck."
             ],
             projects: [
                 {

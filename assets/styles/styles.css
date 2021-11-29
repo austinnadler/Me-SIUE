@@ -22,7 +22,26 @@
 
 .btn {
     margin: 5px;
-}  
+    background-color: #002D62;
+    border-color: #002D62;
+    color: #ffffff;
+}
+
+.btn:hover {
+    background-color: #ffc424;
+    border-color: #ffc424;
+    color: #000000;
+}
+
+.link-img {
+    height: 30px;
+    width: auto;
+}
+
+nav {
+    background-color: #002D62;
+
+}
 
 .overflow {
     overflow: hidden;
